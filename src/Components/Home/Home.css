@@ -1,0 +1,10 @@
+.header-text{
+    font-size: 60px;
+    font-weight: 900;
+    color: #3944F7;
+    text-align: start;
+}
+.header-text span{
+    font-size: 48px;
+    color: #0d0f3c;
+}
