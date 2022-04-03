@@ -1,7 +1,6 @@
 import React from 'react';
 import img from '../../utilites/Canon-EOS-R3.jpg'
 import './Home.css'
-import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
