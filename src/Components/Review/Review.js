@@ -1,13 +1,12 @@
 import React from 'react';
-import useReviews from '../../CustomHook/useReviews';
 
 const Review = (props) => {
-    const { name, body, ratings } = useReviews();
+    const { name, body, ratings } = props.review;
     return (
-        <div>
-            <h3>Name: {name}</h3>
-            <h3>Comment: {body}</h3>
-            <h3>Ratings: {ratings}</h3>
+        <div className='mt-3'>
+            <h4>Name: {name}</h4>
+            <p className='fw-light'>{body}</p>
+            <p className='fw-bold'>Ratings: {ratings}</p>
         </div>
     );
 };

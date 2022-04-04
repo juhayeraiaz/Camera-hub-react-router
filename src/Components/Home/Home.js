@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useReviews from '../../CustomHook/useReviews';
 import img from '../../utilites/Canon-EOS-R3.jpg'
+import Review from '../Review/Review';
 import './Home.css'
 
 const Home = () => {
+    const [reviews] = useReviews();
     return (
         <div>
             <div className='d-block d-md-flex justify-content-between container mt-5'>
@@ -16,9 +19,15 @@ const Home = () => {
                     <img className='w-100 mt-5 mt-md-0' src={img} alt="" />
                 </div>
             </div>
-            <div>
-                <h3 className='mt-5'>User Reviews(3)</h3>
-                <Link className='text-decoration-none' to='/reviews'><button className='btn fw-bold btn-outline-primary p-3 mt-5'>See All Reviews</button></Link >
+            <div className='mb-5'>
+                <h3 className='mt-5 mb-5'>User Reviews(3)</h3>
+                {
+                    reviews.slice(0, 3).map(review => <Review
+                        key={review.id}
+                        review={review}
+                    ></Review>)
+                }
+                <Link className='text-decoration-none' to='/reviews'><button className='btn fw-bold btn-outline-primary p-3 mt-3'>See All Reviews</button></Link >
 
             </div>
         </div>

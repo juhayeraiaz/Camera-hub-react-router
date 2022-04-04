@@ -3,7 +3,7 @@ import useReviews from '../../CustomHook/useReviews';
 import Review from '../Review/Review';
 
 const Reviews = () => {
-    const [reviews] = useReviews([]);
+    const [reviews] = useReviews();
     return (
         <div>
             <h1 className='mt-5' style={{ color: '#3944F7' }}>Customer Reviews</h1>
@@ -12,7 +12,7 @@ const Reviews = () => {
                 {
                     reviews.map(review => <Review
                         key={review.id}
-                        product={review}
+                        review={review}
                     ></Review>)
                 }
             </div>
