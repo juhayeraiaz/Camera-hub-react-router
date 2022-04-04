@@ -1,0 +1,19 @@
+#cards .card {
+    border-radius: 20px;
+    min-height: 100%;
+}
+
+#cards .heading-border {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+}
+
+#cards .card .user-picture img {
+    position: absolute;
+    top: -45%;
+    right: 5%;
+    background: #f7f6f6 !important;
+    padding: 8px;
+    border-radius: 50%;
+}
