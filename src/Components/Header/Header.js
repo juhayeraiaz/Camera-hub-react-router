@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <nav className='mt-4 header'>
+        <nav className='mt-4 header d-flex flex-column flex-md-row justify-content-center'>
             <Link className='mx-3 fs-5 text-decoration-none check' to="/home">Home</Link>
             <Link className='mx-3 fs-5 text-decoration-none check' to="/reviews">Reviews</Link>
             <Link className='mx-3 fs-5 text-decoration-none check' to="/dashboard">Dashboard</Link>
