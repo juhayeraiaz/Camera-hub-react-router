@@ -1,7 +1,7 @@
-.check{
+.head-text{
     font-weight: 500;
     color: rgb(163, 3, 3);
 }
-.check:hover{
+.head-text:hover{
     color: rgb(0, 0, 0);
 }

@@ -7,9 +7,9 @@ const Dashboard = () => {
         <div>
             <h1 className='mt-5 mb-3 fs-1 fw-bold' style={{ color: "#3944F7" }}>DASHBOARD</h1>
             <div className='d-block mt-5 d-md-flex justify-content-center'>
-                <div>
+                <div className='mx-3'>
                     <h3 className='mb-4'>Composed Chart</h3>
-                    <ComposedChart width={630} height={250} data={data}>
+                    <ComposedChart className='w-50' width={630} height={250} data={data}>
                         <XAxis dataKey="month" />
                         <YAxis />
                         <Tooltip />
@@ -20,9 +20,9 @@ const Dashboard = () => {
                         <Line type="monotone" dataKey="revenue" stroke="#ff7300" />
                     </ComposedChart>
                 </div>
-                <div>
+                <div className='ms-3'>
                     <h3 className='mb-4'>Bar Chart</h3>
-                    <BarChart width={630} height={250} data={data}>
+                    <BarChart className='w-50' width={630} height={250} data={data}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="month" />
                         <YAxis />

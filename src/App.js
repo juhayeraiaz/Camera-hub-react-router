@@ -7,6 +7,7 @@ import NotFound from './Components/NotFound/NotFound'
 import Dashboard from './Components/Dashboard/Dashboard'
 import Reviews from './Components/Reviews/Reviews'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Blogs from "./Components/Blogs/Blogs";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/reviews/:id" element={<Reviews />} />
+        <Route path="/blogs" element={<Blogs />}></Route>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
